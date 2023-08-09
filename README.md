@@ -1,8 +1,6 @@
 # Java Lineage Client Demo
 
-```
-:exclamation: This documentation is a work in progress
-```
+> :warning: **This documentation is a work in progress** and will be updated soon
 
 ## Reference setup
 Starting from right to left these are the lineage steps:
