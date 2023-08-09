@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lineageTest.iml" filepath="$PROJECT_DIR$/lineageTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lineagePoc.iml" filepath="$PROJECT_DIR$/lineagePoc.iml" />
     </modules>
   </component>
 </project>

@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lineageTest" />
+        <module name="lineagePoc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lineageTest" target="17" />
+      <module name="lineagePoc" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
