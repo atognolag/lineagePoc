@@ -3,9 +3,6 @@ package org.example;
 import com.google.api.core.ApiFuture;
 import com.google.cloud.datacatalog.lineage.v1.*;
 import com.google.api.core.ApiFutures;
-import org.checkerframework.checker.units.qual.A;
-
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.List;
@@ -15,7 +12,6 @@ import java.util.ArrayList;
 public class NodeDependencies {
     private String project;
     private String location;
-    private String rootUuid;
     private int maxDepth;
     private boolean upstream;
     private EntityReference rootReference;
@@ -62,7 +58,6 @@ public class NodeDependencies {
     NodeDependencies(String project, String location, String rootUuid, int maxDepth, boolean upstream) {
         this.project = project;
         this.location = location;
-        this.rootUuid = rootUuid;
         this.rootReference = EntityReference.newBuilder()
                 .setFullyQualifiedName(rootUuid)
                 .build();
