@@ -15,6 +15,24 @@ Starting from right to left these are the lineage steps:
  
 ![Lineage demo setup](./docs/images/Lineage%20demo.png)
 
+## Sample output
+```
+/usr/bin/java [...] org.example.Main -u false -l us -p report-project -f datastudio:report.lsp-project.ec836f7c-b7d3-47f1-a715-3b725ffe51a8
+[fully_qualified_name: "datastudio:datasource.lsp-project.8b96bfd2-da73-4c12-8cb8-47b343ecc10c"
+, fully_qualified_name: "bigquery:report-project.data_lineage_demo.clean_trips_19-22"
+, fully_qualified_name: "bigquery:report-project.data_lineage_demo.total_trips_19-22"
+, fully_qualified_name: "bigquery:report-project.data_lineage_demo.nyc_green_trips_2019"
+, fully_qualified_name: "bigquery:report-project.data_lineage_demo.nyc_green_trips_2022"
+, fully_qualified_name: "bigquery:report-project.data_lineage_demo.nyc_green_trips_2021"
+, fully_qualified_name: "bigquery:lsp-project.lineagetest2.nyc_green_trips_2020"
+, fully_qualified_name: "gs://biglake_bucket/nyc_green_trips_2019/*.parquet"
+, fully_qualified_name: "bigquery:bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2019"
+, fully_qualified_name: "bigquery:bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2022"
+, fully_qualified_name: "bigquery:bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2021"
+, fully_qualified_name: "bigquery:bigquery-public-data.new_york_taxi_trips.tlc_green_trips_2020"
+]
+```
+
 ## Getting started
 ### Quickstart
 Browse to `./Java` and open up the project with Intellij, configure the `Run configurations` to include the appropriate command line parameters for your use case:
