@@ -42,5 +42,5 @@ Browse to `./Java` and open up the project with Intellij, configure the `Run con
 - *fqdn*: The starting node's fqdn to report lineage. This can be either a Looker Studio Pro report, BQ datasets, Biglake tables, etc.
 
         - For LSP reports, please use: 'datastudio:report.[GCP LSP project id].[Report uuid]'. Example: 'datastudio:report.my-lsp-project.ec836f7c-b7d3-47f1-a715-3b725ffe51a8'
-        - For BQ datasets, please use: 'bigquery:[BQ project].[dataset name]'. Example: 'bigquery:my-bq-project.uber-cool-dataset'
+        - For BQ datasets, please use: 'bigquery:[BQ project].[dataset name].[table name]'. Example: 'bigquery:my-bq-project.uber-cool-dataset.table'
         - For biglake or GCS, please use: 'gs://[bucket_id]/[full_path]'. Example: 'gs://my_gcs_bucket/nyc_green_trips_2019/*.parquet'
