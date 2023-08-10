@@ -39,7 +39,7 @@ Browse to `./Java` and open up the project with Intellij, configure the `Run con
 - *location*: The location where the Dataplex lineage data is located. Example: 'us' for US multi-region data
 - *project*: The project id where the Dataplex lineage data is located.
 - *upstream*: (optional) Sets the direction for lineage querying, upstream or not. Example: true or false.
-- *fqdn*: The starting node's fqdn to report lineage. This can be either a Looker Studio Pro report, BQ datasets, Biglake tables, etc.
+- *fqdn*: The starting node's fqdn to report lineage. This can be either a Looker Studio Pro report, BQ datasets, Biglake/GCS files, etc.
 
         - For LSP reports, please use: 'datastudio:report.[GCP LSP project id].[Report uuid]'. Example: 'datastudio:report.my-lsp-project.ec836f7c-b7d3-47f1-a715-3b725ffe51a8'
         - For BQ datasets, please use: 'bigquery:[BQ project].[dataset name].[table name]'. Example: 'bigquery:my-bq-project.uber-cool-dataset.table'
