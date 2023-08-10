@@ -16,7 +16,7 @@ public class Main {
 
     Option input3 = new Option("f", "fqdn", true, "The report or lineage node's fqdn.\n" +
             "For LSP reports, please use: 'datastudio:report.[GCP LSP project id].[Report uuid]'.\nExample: 'datastudio:report.my-lsp-project.ec836f7c-b7d3-47f1-a715-3b725ffe51a8'.\n" +
-            "For BQ datasets, please use: 'bigquery:[BQ project].[dataset name]'.\nExample: 'bigquery:my-bq-project.uber-cool-dataset'.\n" +
+            "For BQ datasets, please use: 'bigquery:[BQ project].[dataset name].[table name]'.\nExample: 'bigquery:my-bq-project.uber-cool-dataset.table'.\n" +
             "For biglake or GCS, please use: 'gs://[bucket_id]/[full_path]'.\nExample: 'gs://my_gcs_bucket/nyc_green_trips_2019/*.parquet'.\n");
     input3.setRequired(true);
     options.addOption(input3);
@@ -57,7 +57,7 @@ public class Main {
 
     //A couple examples follow:
     /*NodeDependencies myTest1 = new NodeDependencies.NodeDependenciesBuilder()
-            .project("gcp-dataplex-project")
+            .project("gcp-dataplex-project")  //Dataplex lives here
             .location("us")
             .setUpstream(false)
             .reportUuid("datastudio:report.gcp-lsp-project.ec836f7c-b7d3-47f1-a715-3b725ffe51a8")
